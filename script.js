@@ -24,3 +24,5 @@ window.addEventListener("load", () => {
   const game = new game(canvas);
   game.render();
 });
+
+let a = 0;
