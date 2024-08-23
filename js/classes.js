@@ -48,6 +48,7 @@ class Sprite {
   update() {
     this.draw()
     this.animateFrames()
+    // this.flip()
   }
 }
 
@@ -89,7 +90,7 @@ class Fighter extends Sprite {
     this.health = 100
     this.framesCurrent = 0
     this.framesElapsed = 0
-    this.framesHold = 5
+    this.framesHold = 7
     this.sprites = sprites
     this.dead = false
 
@@ -117,6 +118,9 @@ class Fighter extends Sprite {
 
     this.position.x += this.velocity.x
     this.position.y += this.velocity.y
+    if (this.position.x < 0) this.position.x = 0
+    if (this.position.x > 960) this.position.x = 960
+    if (this.position.y > 576) this.position.y = 576
 
     // gravity function
     if (this.position.y + this.height + this.velocity.y >= canvas.height - 96) {
