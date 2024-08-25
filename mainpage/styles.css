@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background-image: url(/imgs/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+/* 
+    background: linear-gradient(89.64deg, rgba(160, 107, 214, 0) 57.75%, rgba(62, 12, 21, 0.2) 86.66%), linear-gradient(270deg, #160E37 69.86%, #244563 104.65%, #3F5580 104.65%); */
+    background-repeat: no-repeat;
+    
+
+}
+.logo{
+    padding-top: 0px;
+}
+.image{
+    display: flex;
+
+    justify-content: center;
+    padding-top: 60px;
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    
+}
+.lower{
+    display: flex;
+    
+    justify-content: space-between;
+   
+   
+    .svg{
+        
+        padding-top: 100px;
+    }
+}
+.text{
+    /* PLAY */
+
+position: absolute;
+width: 114px;
+height: 18px;
+left: 666px;
+top: 407px;
+
+font-family: 'Iceland';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 20px;
+/* or 44% */
+display: flex;
+padding-top:30px ;
+
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+.image-container{
+    position: relative;
+}
+}
+.pr{ 
+    justify-items: center;
+     font-family: 'Irish Grover';
+    color: aqua;
+    
+    z-index: 1;
+ 
+    width: 700px;
+    font-size: 70px;
+
+}
+.pr1{
+    position: absolute; /* Position the text over the image */
+    top: 65%; /* Center vertically */
+    left: 57%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    width: 800px; /* Offset the position to truly center */
+    font-family: 'Irish Grover';
+    color: aqua;
+    
+    padding: 200px; /* Optional: Add padding around the text */
+    font-size: 70px; /* Adjust text size */
+     /* Center the text */
+}
+
+
+
+.iete{
+    position: absolute;
+    width: 114px;
+height: 18px;
+left: 650px;
+top: 607px;
+    
+}
+/* Vector 2 */
+.banner{
+position: absolute;
+width: 1200px;
+height: 418px;
+left: 125px;
+top: 500px;
+z-index: -1;
+
+background: linear-gradient(180deg, #03042B 0%, #0D4374 100%);
+
+}
