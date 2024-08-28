@@ -7,7 +7,7 @@ body {
   position: relative;
   width: 1440px;
   height: 1024px;
-  background-image: url(/mainpage/imgs/bg.jpg);
+  background-image: url(./imgs/bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -64,6 +64,9 @@ body {
   .image-container {
     position: relative;
   }
+}
+.svg{
+  padding-left: 80px;
 }
 .pr {
   justify-items: center;
