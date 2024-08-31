@@ -12,15 +12,19 @@ function rectangularCollision({ rectangle1, rectangle2 }) {
   )
 }
 
+let one = localStorage.getItem('one')
+let two = localStorage.getItem('two')
 function determineWinner({ player, enemy, timerId }) {
   clearTimeout(timerId)
   document.querySelector('#displayText').style.display = 'flex'
   if (player.health === enemy.health) {
     document.querySelector('#displayText').innerHTML = 'Tie'
   } else if (player.health > enemy.health) {
-    document.querySelector('#displayText').innerHTML = `${player1} Wins`
+
+    document.querySelector('#displayText').innerHTML = `${one} Wins`
   } else if (player.health < enemy.health) {
-    document.querySelector('#displayText').innerHTML = `${player2} Wins`
+    document.querySelector('#displayText').innerHTML = `${two} Wins`
+
   }
 }
 

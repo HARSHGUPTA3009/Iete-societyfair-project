@@ -24,11 +24,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     console.log(player1)
     console.log(player2)
+    localStorage.setItem('one', player1)
+    localStorage.setItem('two', player2)
 
    
   })
 })
 export { player1, player2 };
 
-
+// export { player1, player2 }
 
