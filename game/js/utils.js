@@ -1,4 +1,4 @@
-import { player1, player2 } from 'controls.js'
+import { player1, player2 } from '/Iete-societyfair-project/controls.js'
 function rectangularCollision({ rectangle1, rectangle2 }) {
   return (
     rectangle1.attackBox.position.x + rectangle1.attackBox.width >=
