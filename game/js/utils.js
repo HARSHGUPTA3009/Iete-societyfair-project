@@ -17,9 +17,9 @@ function determineWinner({ player, enemy, timerId }) {
   if (player.health === enemy.health) {
     document.querySelector('#displayText').innerHTML = 'Tie'
   } else if (player.health > enemy.health) {
-    document.querySelector('#displayText').innerHTML = {player1}  `Wins`
+    document.querySelector('#displayText').innerHTML = `{player1} Wins`
   } else if (player.health < enemy.health) {
-    document.querySelector('#displayText').innerHTML = {player2} `Wins`
+    document.querySelector('#displayText').innerHTML = `{player2} Wins`
   }
 }
 
