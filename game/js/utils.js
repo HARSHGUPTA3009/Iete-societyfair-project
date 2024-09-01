@@ -1,4 +1,4 @@
-import { player1, player2 } from '/Iete-societyfair-project/controls.js';
+// import { player1, player2 } from '/Iete-societyfair-project/controls.js';
 
 function rectangularCollision({ rectangle1, rectangle2 }) {
   return (
@@ -20,11 +20,9 @@ function determineWinner({ player, enemy, timerId }) {
   if (player.health === enemy.health) {
     document.querySelector('#displayText').innerHTML = 'Tie'
   } else if (player.health > enemy.health) {
-
     document.querySelector('#displayText').innerHTML = `${one} Wins`
   } else if (player.health < enemy.health) {
     document.querySelector('#displayText').innerHTML = `${two} Wins`
-
   }
 }
 
